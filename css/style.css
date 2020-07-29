@@ -1,14 +1,15 @@
 :root {
-  --background-color: #f8f8f2;
-  --background-secondary: #ffe74d;
+  --off-white: #f8f8f2;
+  --primary-red: #f23759;
+  --secondary-red: ;
+  --primary-yellow: #ffe74d;
+  --secondary-yellow: ;
   --primary-text: #282a36;
   --secondary-text: #44475a;
-  --header-text: #ffe74d;
-  --major-red: #f23759;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--off-white);
   font-family: "Lucida Console", Monaco, monospace;
   color: var(--primary-text) !important;
   margin: 0;
@@ -43,7 +44,7 @@ nav ul {
   list-style: none;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  color: var(--background-color);
+  color: var(--off-white);
   padding: 0;
   text-align: right;
   margin: 0;
@@ -62,7 +63,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--off-white);
   font-size: 16px;
 }
 
@@ -96,17 +97,17 @@ nav ul li a {
 
 .hero-row {
   height: 750px;
-  color: var(--background-color);
+  color: var(--off-white);
 }
 
 .h1-hero {
   font-size: 3.5em;
-  color: var(--header-text);
+  color: var(--primary-yellow);
 }
 
 .p-hero {
   font-size: 20px;
-  color: var(--background-color);
+  color: var(--off-white);
 }
 
 .btn {
@@ -114,19 +115,19 @@ nav ul li a {
   padding: 10px;
   text-transform: uppercase;
   transition: 0.5s;
-  color: var(--background-color);
+  color: var(--off-white);
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--background-color);
+  border: 1px solid var(--off-white);
   border-radius: 10px;
 }
 
 .btn:hover {
-  color: var(--major-red);
-  border: 1px solid var(--major-red);
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
 }
 
 .h1-main-content {
-  color: var(--major-red);
+  color: var(--primary-red);
 }
 
 .abt-row {
@@ -134,5 +135,5 @@ nav ul li a {
 }
 
 .skills {
-  background-color: var(--background-secondary);
+  background-color: var(--primary-yellow);
 }
