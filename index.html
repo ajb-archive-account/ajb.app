@@ -4,21 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Andy Byers</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <!--hero & navbar-->
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About Md</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -39,7 +45,7 @@
 <div class="container-fluid about-me">
   <div class="row align-items-center abt-row">
     <div class="col-5 offset-2">
-      <h2 class="h1-main-content"><mark>About Me</mark></h2>
+      <h2><mark>About Me</mark></h2>
       <p>I'm baby snackwave chillwave flexitarian twee, slow-carb asymmetrical crucifix next level chambray fashion axe fanny pack semiotics kombucha air plant lomo. Forage gluten-free DIY organic, pickled occupy photo booth tousled trust fund chartreuse. Cred man braid cardigan, unicorn readymade humblebrag intelligentsia green juice whatever gochujang next level. Salvia waistcoat typewriter asymmetrical cliche twee. Letterpress wayfarers VHS iPhone lyft.</p>
       <p>Deep v skateboard migas trust fund stumptown listicle kogi swag direct trade 8-bit squid art party blog PBR&B. Kale chips craft beer heirloom af twee yuccie chicharrones salvia direct trade VHS migas microdosing kickstarter. Scenester meh kinfolk sriracha forage helvetica. Microdosing butcher ramps, drinking vinegar health goth authentic vinyl semiotics pop-up fingerstache artisan franzen pug iceland.</p>
       <p>Dummy text? More like dummy thicc text, amirite?</p>
@@ -54,11 +60,11 @@
 
 <!--skills-->
 <div class="container-fluid skills">
-  <div class="col offset-6">
-    <h3><mark>Skills</mark></h3>
-  </div>
   <div class="row align-items-center skills-row">
-    <div class="col-3 offset-2">
+    <div class="col-3 justify-content-center ">
+      <h2 style="transform: rotate(-90deg); font-size: 110px;">Skills</h2>
+    </div>
+    <div class="col-3">
       <p><i class="devicon-html5-plain colored"></i> HTML</p>
       <p><i class="devicon-javascript-plain colored"></i> JavaScript</p>
       <p><i class="devicon-css3-plain colored"></i> CSS (+SASS)</p>
@@ -70,6 +76,7 @@
     </div>
     <div class="col-3">
       <p> Jekyll</p>
+      <p><i class="devicon-wordpress-plain colored"></i> WordPress</p>
       <p><i class="devicon-git-plain colored"></i> Git & GitHub</p>
       <p> APM</p>
     </div>  
@@ -77,9 +84,73 @@
 </div>
 <!--end skills-->
 
+<!--portfolio-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="row justify-content-center title-row">
+      <h2 style="font-size: 180px;">Recent Work</h2>
+    </div>
+  </div>
+</div>
 
+<div class="container mt-5">
+  <div class="card-deck">
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+      
+    </div>
 
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+    </div>
+
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card-deck">
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+      
+    </div>
+
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+    </div>
+
+    <div class="card">
+      <img src="/images/website-placeholder.jpg" class="img-fluid" alt="Card image cap">
+      <h4 class="card-title"><a>Card title</a></h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <span><a href="#" class="btn">View</a><a href="#" class="btn">GitHub</a></span>
+    </div>
+
+  </div>
+</div>
+
+<!--portfolio-->
   
+
+
 <!--footer-->
 <footer class="page-footer">
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -88,6 +159,8 @@
   </div>
 </footer>
 <!--end footer-->
+
+<script src="/js/script.js"></script>
 
 </body>
 </html>

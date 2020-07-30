@@ -10,20 +10,13 @@
 
 body {
   background-color: var(--off-white);
-  font-family: "Lucida Console", Monaco, monospace;
-  color: var(--primary-text) !important;
+  font-family: Roboto, "Lucida Console", Monaco, monospace;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-mark {
-  color: var(--primary-red);
-  background-color: var(--secondary-yellow);
-  display: inline-block;
-  line-height: 0em;
-  padding-bottom: 0.1em;
-}
+
 
 header {
   width: 100%;
@@ -41,6 +34,12 @@ header {
   text-align: justify;
 }
 
+.title-row {
+  height: 100px;
+}
+
+/* nav bar */
+
 nav {
   position: fixed;
   width: 100%;
@@ -56,17 +55,14 @@ nav ul {
   padding: 0;
   text-align: right;
   margin: 0;
+  padding: 16px;
   padding-right: 40px;
   transition: 1s;
 }
 
-nav.black ul {
-  background: #000;
-}
-
 nav ul li {
   display: inline-block;
-  padding: 16px 40px;
+  padding: 0px 40px;
 }
 
 nav ul li a {
@@ -75,33 +71,16 @@ nav ul li a {
   font-size: 16px;
 }
 
-@media (max-width: 786px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-  }
-
-  nav ul {
-    max-height: 0px;
-    background: #000;
-  }
-
-  nav.black ul {
-    background: #000;
-  }
-
-  .showing {
-    max-height: 34em;
-  }
-
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px;
-    text-align: center;
-  }
+nav.black ul {
+  color: var(--primary-red) !important;
+  background: #000;
 }
+
+/* TODO You need to target the a tag for the menu links, not just the global font color for the wrapping element. Without seeing the HTML, it should be something like this .opaque-header a { //on scroll  color: black !important; ...
+
+https://stackoverflow.com/questions/46575165/how-can-i-change-the-navbars-text-color-on-scroll */
+
+/* hero page */ 
 
 .hero-row {
   height: 750px;
@@ -109,7 +88,7 @@ nav ul li a {
 }
 
 .h1-hero {
-  font-size: 3.5em;
+  font-size: 4em;
   color: var(--primary-yellow);
 }
 
@@ -137,6 +116,8 @@ nav ul li a {
   color: var(--primary-red);
 }
 
+/* About Me */
+
 .about-me {
   background: rgb(248,248,242);
   background: linear-gradient(14deg, rgba(248,248,242,1) 0%, rgba(248,248,242,1) 59%, rgba(255,231,77,1) 100%);
@@ -146,18 +127,32 @@ nav ul li a {
   height: 750px;
 }
 
+/* Skills */
+
 .skills {
   height: 250px;
   background-color: var(--primary-text);
   color: var(--off-white);
-  font-family: "Lucida Console", Monaco, monospace;
 }
 
 .skills-row {
   height: 250px;
 }
 
+/* Portfolio */
+
+.portfolio {
+  background: rgb(248,248,242);
+  background: linear-gradient(194deg, rgba(248,248,242,1) 0%, rgba(248,248,242,1) 61%, rgba(242,55,89,1) 100%);
+}
+
+.portfolio-row {
+  height: 750px;
+}
+
+
 /* Footer */
+
 .page-footer {
   padding: 10px;
   font-size: 12px;
