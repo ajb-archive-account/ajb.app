@@ -17,21 +17,65 @@
 <body>
 
 <!--navigation-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light primary-color">
 
+  <!-- Navbar brand -->
+  
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    
+    <!-- Links -->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stuff</a>
+      </li>
+    </ul>
+    
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
 <!--navigation-->
 
 <!--hero-->
-<div class="container-fluid hero">
-  <div class="row hero-row">  
-    <div class="col align-baseline hero-col">
-      <h1 class="align-baseline h1-hero">Hi, I'm Andy Byers</h>
-      <p class="p-hero">Web Developer</p>
-      
+<div class="container-fluid my-auto hero">
+  <div class="row-fluid my-auto text-center hero-row">  
+    <div class="col hero-col">
+      <h1 class="h1-hero">Andy</h1>
+    </div>
+  </div>
+  <div class="row text-center hero-row"> 
+    <div class="col hero-col-2">
+      <h1 class="h1-hero-2">Byers.</h1>
+    </div>
+  </div>
+  <div class="row text-center hero-row">
+    <div class="col mt-4 hero-col-3"> 
+      <h1 class="h1-hero-3">Web Developer</h1>
     </div>
   </div>
   <div class="row">
-    <div class="col text-center">
-      <button type="button" class="btn btn-lg text-center"> View my Work </button>
+    <div class="col mt-4 text-center">
+      <button type="button" class="btn btn-lg text-center">&nbsp; View my Work &nbsp;</button>
     </div>
   </div>  
 </div>
@@ -39,16 +83,18 @@
 
 <!--about me-->
 <div class="container-fluid about-me">
+  <div class="container">
   <div class="row align-items-center abt-row">
-    <div class="col-5 offset-2">
-      <h2><mark>About Me</mark></h2>
+    <div class="col">
+      <h2 class="text-center" style="padding:40px;">About Me</h2>
       <p>I'm baby snackwave chillwave flexitarian twee, slow-carb asymmetrical crucifix next level chambray fashion axe fanny pack semiotics kombucha air plant lomo. Forage gluten-free DIY organic, pickled occupy photo booth tousled trust fund chartreuse. Cred man braid cardigan, unicorn readymade humblebrag intelligentsia green juice whatever gochujang next level. Salvia waistcoat typewriter asymmetrical cliche twee. Letterpress wayfarers VHS iPhone lyft.</p>
       <p>Deep v skateboard migas trust fund stumptown listicle kogi swag direct trade 8-bit squid art party blog PBR&B. Kale chips craft beer heirloom af twee yuccie chicharrones salvia direct trade VHS migas microdosing kickstarter. Scenester meh kinfolk sriracha forage helvetica. Microdosing butcher ramps, drinking vinegar health goth authentic vinyl semiotics pop-up fingerstache artisan franzen pug iceland.</p>
       <p>Dummy text? More like dummy thicc text, amirite?</p>
     </div>
     
-    <div class="col-2 offset-1 d-none d-lg-block d-xl-block">
+    <!--<div class="col-2 offset-1 d-none d-lg-block d-xl-block">
       <img src="images/AndyByers1.png" alt="A picture of Andy Byers">
+    </div>-->
     </div>
   </div>
 </div>
@@ -81,13 +127,13 @@
 <!--end skills-->
 
 <!--portfolio-->
-<div class="container-fluid">
+<!--<div class="container-fluid">
   <div class="row">
     <div class="row justify-content-center title-row">
       <h2 style="font-size: 180px;">Recent Work</h2>
     </div>
   </div>
-</div>
+</div>-->
 
 <div class="container mt-5">
   <div class="card-deck">
