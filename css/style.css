@@ -1,29 +1,24 @@
+
+
 :root {
   --off-white: #f8f8f2;
   --primary-red: #f23759;
   --secondary-red: ;
-  --primary-yellow: #ffe74d;
-  --secondary-yellow: #FFF1A0;
+  --primary-yellow: #fff1a0;
+  --secondary-yellow: #fff1a0;
   --primary-text: #000;
   --secondary-text: #44475a;
 }
 
 body {
   background-color: #000;
-  font-family: 'Roboto', 'Montserrat' sans-serif;;
   font-size: 16px;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  text-transform: uppercase;
 }
 
 h2 {
-font-size: 90px;
-}
-
-.content {
-  width: 94%;
-  margin: 4em auto;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
+  font-size: 90px;
 }
 
 .title-row {
@@ -32,24 +27,26 @@ font-size: 90px;
 
 /* nav bar */
 
-
 /* hero */
 
+.h1-hero {
+  font-size: 21.6vw;
+}
+
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: url(/images/hero-img-2.png) no-repeat 50% 50%;
   background-size: cover;
-  color: var(--primary-yellow);
-  font: Montserrat;
-  font-weight: 900;
+  color: var(--secondary-yellow);
 }
 
 .btn {
   padding: 10px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: bold;
   transition: 0.5s;
   color: var(--primary-yellow);
+  background-color: #000;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--secondary-text);
   border-radius: 10px;
@@ -70,6 +67,7 @@ font-size: 90px;
   background: url(/images/abt-img.png) no-repeat 50% 50%;
   background-size: cover;
   color: var(--off-white);
+  min-height: 100vh;
 }
 
 /* Skills */
@@ -81,14 +79,18 @@ font-size: 90px;
 /* Portfolio */
 
 .portfolio {
-  background: rgb(248,248,242);
-  background: linear-gradient(194deg, rgba(248,248,242,1) 0%, rgba(248,248,242,1) 61%, rgba(242,55,89,1) 100%);
+  background: rgb(248, 248, 242);
+  background: linear-gradient(
+    194deg,
+    rgba(248, 248, 242, 1) 0%,
+    rgba(248, 248, 242, 1) 61%,
+    rgba(242, 55, 89, 1) 100%
+  );
 }
 
 .portfolio-row {
   height: 750px;
 }
-
 
 /* Footer */
 
