@@ -9,9 +9,13 @@
 }
 
 body {
-  background-color: var(--primary-yellow);
-  font-family: "Open Sans", Roboto, "Helvetica Neue";
+  background-color: #000;
+  font-family: 'Roboto', 'Montserrat' sans-serif;;
+  font-size: 16px;
+}
 
+h2 {
+font-size: 90px;
 }
 
 .content {
@@ -29,53 +33,15 @@ body {
 /* nav bar */
 
 
+/* hero */
 
-/* hero page */ 
 .hero {
   height: 100vh;
   background: url(/images/hero-img-2.png) no-repeat 50% 50%;
   background-size: cover;
-}
-
-.hero-row {
-  color: var(--off-white);
-}
-
-.hero-col {
-  color: var(--off-white);
-}
-
-.hero-col-2 {
-  color: var(--off-white);
-}
-
-.hero-col-3 {
-  color: var(--off-white);
-}
-
-
-.h1-hero {
-  color: var(--primary-yellow); 
-  font-size: 120px;
-  font-weight: 900;
-}
-
-
-.h1-hero-2 {
-  color: var(--primary-yellow); 
-  font-size: 120px;
-  font-weight: 900;
-}
-
-.h1-hero-3 {
-  color: var(--primary-yellow); 
-  font-size: 50px;
-  font-weight: 800;
-}
-
-.p-hero {
-  font-size: 25px;
   color: var(--primary-yellow);
+  font: Montserrat;
+  font-weight: 900;
 }
 
 .btn {
@@ -101,23 +67,15 @@ body {
 /* About Me */
 
 .about-me {
-  background: rgb(248,248,242);
-  background: linear-gradient(0deg, rgba(248,248,242,1) 0%, rgba(248,248,242,1) 55%, rgba(255,231,77,1) 100%);
-
+  background: url(/images/abt-img.png) no-repeat 50% 50%;
+  background-size: cover;
+  color: var(--off-white);
 }
-
-
 
 /* Skills */
 
-.skills {
-  height: 250px;
-  background-color: var(--primary-text);
-  color: var(--primary-yellow);
-}
-
 .skills-row {
-  height: 250px;
+  height: 150px;
 }
 
 /* Portfolio */
