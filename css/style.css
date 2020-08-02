@@ -30,12 +30,12 @@ h2 {
 /* hero */
 
 .h1-hero {
-  font-size: 20vw;
+  font-size: 7vw;
 }
 
 .hero {
   height: 100vh;
-  background: url(/images/hero-img.png) no-repeat 50% 50%;
+  background: url(/images/abt-img.png) no-repeat 50% 50%;
   background-size: cover;
   color: var(--secondary-yellow);
 }
@@ -62,9 +62,8 @@ h2 {
 }
 
 /* About Me */
-
 .about-me {
-  background: url(/images/abt-img.png) no-repeat 50% 50%;
+  background: url(/images/hero-img-2.png) no-repeat 50% 50%;
   background-size: cover;
   min-height: 100vh;
 }
