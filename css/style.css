@@ -1,5 +1,3 @@
-
-
 :root {
   --off-white: #f8f8f2;
   --primary-red: #f23759;
@@ -15,10 +13,12 @@ body {
   font-size: 16px;
   font-family: Menlo, Monaco, 'Courier New', monospace;
   text-transform: uppercase;
+  color: var(--off-white);
 }
 
 h2 {
   font-size: 90px;
+  color: var(--primary-yellow)
 }
 
 .title-row {
@@ -30,18 +30,18 @@ h2 {
 /* hero */
 
 .h1-hero {
-  font-size: 21.6vw;
+  font-size: 20vw;
 }
 
 .hero {
-  min-height: 100vh;
-  background: url(/images/hero-img-2.png) no-repeat 50% 50%;
+  height: 100vh;
+  background: url(/images/hero-img.png) no-repeat 50% 50%;
   background-size: cover;
   color: var(--secondary-yellow);
 }
 
 .btn {
-  padding: 10px;
+  padding: 11px;
   text-transform: lowercase;
   font-weight: bold;
   transition: 0.5s;
@@ -66,30 +66,37 @@ h2 {
 .about-me {
   background: url(/images/abt-img.png) no-repeat 50% 50%;
   background-size: cover;
-  color: var(--off-white);
   min-height: 100vh;
 }
 
 /* Skills */
 
 .skills-row {
-  height: 150px;
+  min-height: 150px;
 }
 
 /* Portfolio */
 
-.portfolio {
-  background: rgb(248, 248, 242);
-  background: linear-gradient(
-    194deg,
-    rgba(248, 248, 242, 1) 0%,
-    rgba(248, 248, 242, 1) 61%,
-    rgba(242, 55, 89, 1) 100%
-  );
+.h1-rw {
+  font-size: 13vw;
+  color: var(--primary-yellow)
 }
 
 .portfolio-row {
   height: 750px;
+}
+
+/* Cards */
+.portfolio-deck {
+  color: var(--primary-text);
+}
+
+/* Contact */
+
+.contact-me {
+  background: url(/images/contact-img.png) no-repeat 50% 50%;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 /* Footer */
@@ -97,4 +104,6 @@ h2 {
 .page-footer {
   padding: 10px;
   font-size: 12px;
+  background: url(/images/footer-img.png) no-repeat 50% 50%;
+  background-size: cover;
 }
