@@ -568,6 +568,7 @@ section {
   padding: 120px 0;
 }
 
+
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
@@ -575,6 +576,9 @@ section {
 }
 
 .about .content ul {
+  margin-left: 20px; 
+  padding-left: 0;
+  margin-right: 20px;
   list-style: none;
   padding: 0;
 }
@@ -593,7 +597,7 @@ section {
   margin-bottom: 0;
 }
 
-.about .content .read-more {
+.about .content .contact-btn {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -607,11 +611,11 @@ section {
   position: relative;
 }
 
-.about .content .read-more:hover {
+.about .content .contact-btn:hover {
   background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
 }
 
-.about .content .read-more i {
+.about .content .contact-btn i {
   font-size: 22px;
   position: absolute;
   right: 20px;
