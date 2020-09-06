@@ -625,8 +625,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .card {
-  padding: 10px;
-}
+border:none;}
 .card-img {
   border-radius: 0;
 }
