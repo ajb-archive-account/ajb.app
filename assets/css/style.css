@@ -625,7 +625,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .card {
-  border: none;
+  padding: 10px;
 }
 .card-img {
   border-radius: 0;
@@ -634,7 +634,6 @@ section {
 .portfolio-btn {
   color: #5444f4;
   border-color: #5444f4;
-  align-items: bottom !important;
 }
 
 .portfolio-btn:hover {
