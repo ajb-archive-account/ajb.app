@@ -4,5 +4,3 @@
 - One pager design
 - Responsive Layout
 - Cross Browser compatible
-
-- (Optimized for performance)
