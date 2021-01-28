@@ -24,10 +24,20 @@ func main() {
 	}
 }
 
+// var tpl = template.Must(template.ParseFiles("index.html"))
+//
+// func indexHandler(w http.ResponseWriter, r *http.Request) {
+// 	tpl.Execute(w, nil)
+// }
+
 func serveTemplates(w http.ResponseWriter, r *http.Request) {
 	// Build paths to the layout file and the corresponding template file request.
+
+	tpl := template.Must(template.ParseFiles("index.html"))
 	lp := filepath.Join("templates", "layout.html")
 	fp := filepath.Join("templates", filepath.Clean(r.URL.Path))
+
+	tpl.Execute(w, nil)
 
 	// Return 404 if the requested template does not exist.
 	info, err := os.Stat(fp)
