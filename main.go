@@ -17,7 +17,7 @@ func main() {
 	// All requests not picked up by the static file server should be handled by serveTemplates() function.
 	http.HandleFunc("/", serveTemplates)
 
-	log.Println("Listening on port 9100...")
+	// 	log.Println("Listening on port 9100...")
 	err := http.ListenAndServe(":9100", nil)
 	if err != nil {
 		log.Fatal(err)
