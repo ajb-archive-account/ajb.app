@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -17,7 +18,7 @@ func main() {
 	// All requests not picked up by the static file server should be handled by serveTemplates() function.
 	http.HandleFunc("/", serveTemplates)
 
-	// 	log.Println("Listening on port 9100...")
+	fmt.Println("Listening on port 9100...")
 	err := http.ListenAndServe(":9100", nil)
 	if err != nil {
 		log.Fatal(err)
@@ -33,11 +34,11 @@ func main() {
 func serveTemplates(w http.ResponseWriter, r *http.Request) {
 	// Build paths to the layout file and the corresponding template file request.
 
-	tpl := template.Must(template.ParseFiles("index.html"))
+	// tpl := template.Must(template.ParseFiles("index.html"))
 	lp := filepath.Join("templates", "layout.html")
 	fp := filepath.Join("templates", filepath.Clean(r.URL.Path))
 
-	tpl.Execute(w, nil)
+	// tpl.Execute(w, nil)
 
 	// Return 404 if the requested template does not exist.
 	info, err := os.Stat(fp)
