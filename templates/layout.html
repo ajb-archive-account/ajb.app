@@ -1,64 +1,62 @@
 {{define "layout"}}
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>{{template "title"}}</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="web developer" name="title" />
-    <meta content="python developer" name="title" />
-    <meta
-      content="HTML, CSS, Python, JavaScript, Django, Go, Golang"
-      name="keywords"
-    />
-    <meta content="Andy Byers" name="developer" />
-    <link href="assets/stylesheets/main.css" rel="stylesheet" />
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{template "title"}}</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="web developer" name="title" />
+        <meta content="python developer" name="title" />
+        <meta content="Golang developer" name="title" />
+        <meta content="Go developer" name="title" />
+        <meta
+            content="HTML, CSS, Python, JavaScript, Django, Go, Golang"
+            name="keywords"
+        />
+        <meta content="Andy Byers" name="developer" />
+        <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    </head>
 
+    <body>
+        <!-- NavBar -->
+        <header id="header" class="fixed-top">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 d-flex align-items-center">
+                        <h1 class="logo mr-auto">
+                            <a href="index.html">ajb.app</a>
+                        </h1>
 
-  {{template "body"}}
-
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-xl-9 d-flex align-items-center">
-            <h1 class="logo mr-auto"><a href="index.html">ajb.app</a></h1>
-
-            <nav class="nav-menu d-none d-lg-block">
-              <ul>
-                  <body>
-                <a href="./example.html" title="Home">Home</a>
-                <a href="./about.html" title="About">About</a>
-                <a href="./contact.html " title="Contact">Contact</a>
-
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="/my-cv.html" target="_blank">View my CV</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright-wrap d-md-flex py-4">
-          <div class="mr-md-auto text-center text-md-left">
-            <div class="copyright">
-              <strong>Made with Go, by Andy Byers</strong>, 2020
+                        <nav class="nav-menu d-none d-lg-block">
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/contact.html">Contact</a></li>
+                                <li><a href="/my-cv.html">View my CV</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  </body>
+        </header>
+        <!-- NavBar -->
+
+        {{template "body"}}
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright-wrap d-md-flex py-4">
+                    <div class="mr-md-auto text-center text-md-left">
+                        <div class="copyright">
+                            <strong>Made with Go, by Andy Byers</strong>, 2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
-{{end}}
+{{ end }}
