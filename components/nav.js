@@ -36,4 +36,4 @@ class Nav extends HTMLElement {
   }
 }
 
-customElements.define('navComp', Nav);
+customElements.define('navcomp', Nav);
