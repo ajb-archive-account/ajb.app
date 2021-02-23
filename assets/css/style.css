@@ -17,12 +17,16 @@ a:hover {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: 'Poppins', sans-serif;
 }
+
+h4,
+h5 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center; 
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
